@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.header-container {
+  margin: 0 2rem;
+}
+
+.header-container h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.header-container h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header-container p {
+  font-weight: 400;
+  max-width: 450px;
+  font-size: 12px;
+}
+
+.grid-container {
+  margin: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+}
+
+.grid-container .image-container {
+  position: relative;
+}
+
+.grid-container .image-container img {
+  max-width: 100%;
+}
+
+.grid-container .image-container .name {
+  font-size: 15px;
+}
+
+.grid-container .image-container .job {
+  font-family: "PT Serif", serif;
+  font-weight: normal;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  position: absolute;
+  top: 0px;
+  right: -12px;
+}
+
+.grid-container .box-two, .grid-container .box-four, .grid-container .box-six {
+  margin-top: 4rem;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 850px) {
+  .header-container {
+    margin: 2rem 7rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-container .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-container .main-header h1 {
+    font-size: 25px;
+  }
+  .header-container .main-header .header-text-box {
+    width: 400px;
+    margin-left: 1.2rem;
+  }
+  .header-container .main-header .header-text-box h2 {
+    font-size: 21px;
+  }
+  .header-container .main-header .header-text-box p {
+    font-size: 15px;
+  }
+  .grid-container {
+    margin: 5rem 7rem;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+  }
+  .grid-container .box-four, .grid-container .box-six {
+    margin-top: 0;
+  }
+  .grid-container .box-five {
+    margin-top: 4rem;
+  }
+  .grid-container .image-container .job {
+    font-size: 16px;
+    right: -20px;
+  }
+  footer {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
